@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 
 import com.github.sullis.dropwizard.helloworld.api.HelloMessage;
 import com.google.common.base.Optional;
-import com.yammer.metrics.annotation.Timed;
+import com.codahale.metrics.annotation.Timed;
 
 @Path("/helloworld")
 @Produces(MediaType.APPLICATION_JSON)
@@ -27,4 +27,3 @@ public class HelloWorldResource {
         return hello;
     }
 }
-
