@@ -8,7 +8,7 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.github.sullis.dropwizard.helloworld.api.HelloMessage;
-import com.google.common.base.Optional;
+import java.util.Optional;
 import com.codahale.metrics.annotation.Timed;
 
 @Path("/helloworld")
