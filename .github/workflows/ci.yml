@@ -1,4 +1,4 @@
-name: Java CI
+name: CI
 
 on: [push, pull_request]
 
@@ -13,5 +13,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11.0.x
-    - name: Build with Maven
+    - name: Build
       run: mvn clean package --file pom.xml
