@@ -15,3 +15,21 @@ jobs:
         java-version: 11
     - name: Build
       run: mvn clean package --file pom.xml
+
+  automerge:
+    runs-on: [ubuntu-latest]
+    name: automerge
+    needs: [build]
+    if: github.base_ref == 'master' && github.actor == 'dependabot[bot]'
+    steps:
+    - name: merge
+      uses: actions/github-script@v2
+      with:
+        script: |
+          github.pulls.merge({
+            owner: context.payload.repository.owner.login,
+            repo: context.payload.repository.name,
+            pull_number: context.payload.pull_request.number,
+            merge_method: 'squash'
+          })
+        github-token: ${{secrets.GITHUB_TOKEN}}
