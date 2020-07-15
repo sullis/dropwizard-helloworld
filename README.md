@@ -1,7 +1,7 @@
 # dropwizard-helloworld
 
 
-"Hello world" application -- Dropwizard version 2.x
+"Hello world" application -- [Dropwizard](https://dropwizard.io) version 2.x
 
 
 # Java runtime
