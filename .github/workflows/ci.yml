@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: 8
     - name: Build
-      run: mvn clean package --file pom.xml
+      run: mvn -B clean package --file pom.xml
 
   automerge:
     runs-on: [ubuntu-latest]
