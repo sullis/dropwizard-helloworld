@@ -12,7 +12,6 @@ This project requires `Java 11`
 
 $ mvn clean package
 
-$ java -jar target/dropwizard-helloworld-0.0.1-SNAPSHOT.jar server config/dev_config.yml 
+$ java -jar target/app.jar server config/dev_config.yml
 
 Service endpoint: http://localhost:8080/helloworld
-
