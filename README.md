@@ -14,4 +14,6 @@ $ mvn clean package
 
 $ java -jar target/app.jar server config/dev_config.yml
 
-Service endpoint: http://localhost:8080/helloworld
+# Service endpoint
+
+http://localhost:8080/helloworld
