@@ -13,6 +13,7 @@
       <logback.version>1.2.3</logback.version>
       <slf4j.version>1.7.30</slf4j.version>
       <skip.tests>false</skip.tests>
+      <main.class>com.github.sullis.dropwizard.helloworld.HelloWorldApplication</main.class>
     </properties>
 
     <dependencies>
@@ -70,6 +71,11 @@
                 <descriptorRefs>
                   <descriptorRef>jar-with-dependencies</descriptorRef>
                 </descriptorRefs>
+                <archive>
+                  <manifest>
+                    <mainClass>${main.class}</mainClass>
+                  </manifest>
+                </archive>
               </configuration>
               <executions>
                 <execution>
@@ -88,7 +94,7 @@
                 <configuration>
                   <archive>
                     <manifest>
-                      <mainClass>com.github.sullis.dropwizard.helloworld.HelloWorldApplication</mainClass>
+                      <mainClass>${main.class}</mainClass>
                     </manifest>
                   </archive>
                 </configuration>
