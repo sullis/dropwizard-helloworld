@@ -5,7 +5,7 @@
 
 
 # Java runtime
-This project requires `Java 11`
+This project requires `Java 8` or higher
 
 
 # Build
