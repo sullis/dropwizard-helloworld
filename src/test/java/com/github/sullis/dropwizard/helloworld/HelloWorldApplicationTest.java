@@ -12,7 +12,7 @@ import io.dropwizard.testing.junit5.DropwizardExtensionsSupport;
 import static io.restassured.RestAssured.given;
 
 @ExtendWith(DropwizardExtensionsSupport.class)
-public class HelloWorldClientTest {
+public class HelloWorldApplicationTest {
 
   private static final DropwizardAppExtension<HelloWorldConfiguration> EXT = new DropwizardAppExtension<>(
           HelloWorldApplication.class,
