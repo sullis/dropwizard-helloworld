@@ -1,3 +1,5 @@
+defaultName: friend
+
 server:
   applicationConnectors:
     - type: http
