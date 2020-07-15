@@ -15,8 +15,7 @@ import java.util.Optional;
 @Consumes(MediaType.APPLICATION_JSON)
 public class HelloWorldResource {
 
-    public HelloWorldResource() {
-    }
+    public HelloWorldResource() {  }
 
     @GET
     public HelloMessage get(@QueryParam("name") Optional<String> name) {
