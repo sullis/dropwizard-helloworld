@@ -21,7 +21,7 @@ public class HelloWorldResource {
     @GET
     public HelloMessage get(@QueryParam("name") Optional<String> name) {
         HelloMessage hello = new HelloMessage();
-        hello.setMessage("Hello" + ( (name.isPresent()) ? " " + name.get() : ""));
+        hello.setMessage(("Hello " + name.orElse("")).trim());
         return hello;
     }
 }

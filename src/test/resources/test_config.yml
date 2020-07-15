@@ -1,0 +1,16 @@
+defaultName: friend
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 0
+
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+
+    com.github.sullis.dropwizard.helloworld: DEBUG

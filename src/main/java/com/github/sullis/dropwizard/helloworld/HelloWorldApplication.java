@@ -1,5 +1,7 @@
 package com.github.sullis.dropwizard.helloworld;
 
+import com.github.sullis.dropwizard.helloworld.resources.HelloWorldResource;
+
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -22,6 +24,6 @@ public class HelloWorldApplication
     @Override
     public void run(HelloWorldConfiguration configuration,
                     Environment environment) {
-        // nothing to do yet
+        environment.jersey().register(new HelloWorldResource());
     }
 }
