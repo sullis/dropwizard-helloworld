@@ -16,4 +16,4 @@ $ java -jar target/app.jar server config/dev_config.yml
 
 # Service endpoint
 
-http://localhost:8080/helloworld
+http://localhost:8080/hello

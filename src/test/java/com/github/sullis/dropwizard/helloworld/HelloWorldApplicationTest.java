@@ -23,7 +23,7 @@ public class HelloWorldApplicationTest {
   public void happyPath() throws Exception {
     given()
       .request()
-      .get("http://localhost:" + EXT.getLocalPort() + "/helloworld?name=Obama")
+      .get("http://localhost:" + EXT.getLocalPort() + "/hello?name=Obama")
     .then()
         .assertThat()
         .statusCode(200)

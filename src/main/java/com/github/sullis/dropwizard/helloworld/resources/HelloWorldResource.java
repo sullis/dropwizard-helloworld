@@ -10,17 +10,20 @@ import javax.ws.rs.core.MediaType;
 import com.github.sullis.dropwizard.helloworld.api.HelloMessage;
 import java.util.Optional;
 
-@Path("/helloworld")
+@Path("/hello")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class HelloWorldResource {
+    private String defaultName;
 
-    public HelloWorldResource() {  }
+    public HelloWorldResource(String defaultName) {
+        this.defaultName = defaultName;
+    }
 
     @GET
     public HelloMessage get(@QueryParam("name") Optional<String> name) {
         HelloMessage hello = new HelloMessage();
-        hello.setMessage(("Hello " + name.orElse("")).trim());
+        hello.setMessage(("Hello " + name.orElse(defaultName)));
         return hello;
     }
 }

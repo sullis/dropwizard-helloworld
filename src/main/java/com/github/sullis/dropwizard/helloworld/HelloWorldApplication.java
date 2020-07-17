@@ -15,6 +15,6 @@ public class HelloWorldApplication
     @Override
     public void run(HelloWorldConfiguration configuration,
                     Environment environment) {
-        environment.jersey().register(new HelloWorldResource());
+        environment.jersey().register(new HelloWorldResource(configuration.getDefaultName()));
     }
 }
