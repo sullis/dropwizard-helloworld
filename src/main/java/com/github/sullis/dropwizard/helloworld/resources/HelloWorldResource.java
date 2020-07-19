@@ -14,9 +14,9 @@ import java.util.Optional;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class HelloWorldResource {
-    private String defaultName;
+    private final String defaultName;
 
-    public HelloWorldResource(String defaultName) {
+    public HelloWorldResource(final String defaultName) {
         this.defaultName = defaultName;
     }
 
