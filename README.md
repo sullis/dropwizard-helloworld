@@ -11,13 +11,13 @@ This project requires `Java 8` or higher
 # Build
 
 ```
-$ mvn clean package
+mvn clean package
 ```
 
 # Run the application
 
 ```
-$ java -jar target/app.jar server config/dev_config.yml
+java -jar target/app.jar server config/dev_config.yml
 ```
 
 # Service endpoint
