@@ -22,6 +22,6 @@ java -jar target/app.jar server config/dev_config.yml
 
 # Service endpoint
 
-open a web browser and visit this URL:
+in your web browser, visit this URL:
 
 http://localhost:8080/hello?name=Jeff
