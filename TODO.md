@@ -2,7 +2,7 @@
 
 Dropwizard applications typically have more than one REST endpoint.
 
-Knowing how to add a REST endpoint is a good skill to have.
+Knowing how to add a REST endpoint is a good skill to practice.
 
 # Add a new REST endpoint
 
