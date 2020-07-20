@@ -2,8 +2,8 @@ package com.github.sullis.dropwizard.helloworld.api;
 
 import java.util.Date;
 
-public class HelloMessage {
-	private String message = "Hello";
+public class Message {
+	private String text;
 	private Date timestamp = new Date();
 
 	public Date getTimestamp() {
@@ -13,12 +13,12 @@ public class HelloMessage {
 		this.timestamp = timestamp;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getText() {
+		return text;
 	}
 
-	public void setMessage(String msg) {
-		message = msg;
+	public void setText(String s) {
+		text = s;
 	}
 
 }

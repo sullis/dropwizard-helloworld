@@ -7,7 +7,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
-import com.github.sullis.dropwizard.helloworld.api.HelloMessage;
+import com.github.sullis.dropwizard.helloworld.api.Message;
 import java.util.Optional;
 
 @Path("/hello")
@@ -21,9 +21,9 @@ public class HelloWorldResource {
     }
 
     @GET
-    public HelloMessage get(@QueryParam("name") Optional<String> name) {
-        HelloMessage hello = new HelloMessage();
-        hello.setMessage(("Hello " + name.orElse(defaultName)));
+    public Message get(@QueryParam("name") Optional<String> name) {
+        Message hello = new Message();
+        hello.setText(("Hello " + name.orElse(defaultName)));
         return hello;
     }
 }
