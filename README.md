@@ -20,7 +20,7 @@ mvn clean package
 java -jar target/app.jar server config/dev_config.yml
 ```
 
-# Service endpoint
+# "hello" endpoint
 
 in your web browser, visit this URL:
 
