@@ -1,5 +1,3 @@
-defaultName: friend
-
 server:
   applicationConnectors:
     - type: http
@@ -14,3 +12,5 @@ logging:
   loggers:
 
     com.github.sullis.dropwizard.helloworld: DEBUG
+
+defaultName: friend
