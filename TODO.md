@@ -4,7 +4,7 @@ Dropwizard applications typically have more than one REST endpoint.
 
 Knowing how to add a REST endpoint is a good skill to practice.
 
-# Add a new REST endpoint
+# Add a new REST endpoint to the `dropwizard-helloworld` application
 
 - locate the HelloResource.java file
 - notice that HelloResource.java is in a package called `resources`
