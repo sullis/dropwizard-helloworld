@@ -10,10 +10,10 @@ Knowing how to add a REST endpoint is a good skill to have.
 - notice that HelloResource.java is in a package called `resources`
 - copy HelloResource.java to GoodbyeResource.java
 - open GoodbyeResource.java in an editor
-- change `@Path("/hello")` to `@Path("/goodbye")`
-- replace 'public class HelloResource' with 'public class GoodbyeResource'
-- replace 'public HelloResource' with 'public GoodbyeResource'
-- find the line that calls `setText`
+- locate the line containing `@Path`
+- change the `@Path` from `/hello` to `/goodbye`
+- change the class name from `HelloResource` to `GoodbyeResource`
+- find the line that calls the `setText` method
 - change `"Hello "` to `"Goodbye "`
 - open `HelloWorldApplication.java` in an editor
 - find the `run` method
