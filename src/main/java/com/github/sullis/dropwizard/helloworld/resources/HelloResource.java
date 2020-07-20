@@ -13,10 +13,10 @@ import java.util.Optional;
 @Path("/hello")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-public class HelloWorldResource {
+public class HelloResource {
     private final String defaultName;
 
-    public HelloWorldResource(final String defaultName) {
+    public HelloResource(final String defaultName) {
         this.defaultName = defaultName;
     }
 

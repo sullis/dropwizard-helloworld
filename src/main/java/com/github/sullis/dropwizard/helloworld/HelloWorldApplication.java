@@ -1,6 +1,6 @@
 package com.github.sullis.dropwizard.helloworld;
 
-import com.github.sullis.dropwizard.helloworld.resources.HelloWorldResource;
+import com.github.sullis.dropwizard.helloworld.resources.HelloResource;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
@@ -15,6 +15,6 @@ public class HelloWorldApplication
     @Override
     public void run(HelloWorldConfiguration configuration,
                     Environment environment) {
-        environment.jersey().register(new HelloWorldResource(configuration.getDefaultName()));
+        environment.jersey().register(new HelloResource(configuration.getDefaultName()));
     }
 }
