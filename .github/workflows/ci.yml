@@ -18,7 +18,7 @@ jobs:
       with:
         java-version: ${{ matrix.java }}
     - name: Build
-      run: mvn -B clean package --file pom.xml
+      run: mvn --no-transfer-progress -B clean package --file pom.xml
 
   automerge:
     runs-on: [ubuntu-latest]
