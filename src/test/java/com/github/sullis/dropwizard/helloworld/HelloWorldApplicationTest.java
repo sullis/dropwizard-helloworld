@@ -21,6 +21,8 @@ public class HelloWorldApplicationTest {
 
   @Test
   public void happyPath() throws Exception {
+    System.out.println("availableProcessors=" + Runtime.getRuntime().availableProcessors());
+
     given()
       .request()
       .get("http://localhost:" + EXT.getLocalPort() + "/hello?name=Obama")
