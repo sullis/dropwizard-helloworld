@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     strategy:
       matrix:
@@ -21,7 +21,7 @@ jobs:
       run: mvn --no-transfer-progress -B clean package --file pom.xml
 
   automerge:
-    runs-on: [ubuntu-latest]
+    runs-on: [ubuntu-20.04]
     name: automerge
     needs: [build]
     if: github.base_ref == 'master' && github.actor == 'dependabot[bot]'
