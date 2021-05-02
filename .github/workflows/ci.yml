@@ -28,7 +28,7 @@ jobs:
     if: github.base_ref == 'main' && github.actor == 'dependabot[bot]'
     steps:
     - name: merge
-      uses: actions/github-script@v3
+      uses: actions/github-script@v4.0.2
       with:
         script: |
           github.pulls.merge({
