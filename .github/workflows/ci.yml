@@ -12,7 +12,7 @@ jobs:
         java: [8, 17]
 
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v2
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
@@ -20,4 +20,4 @@ jobs:
         java-version: ${{ matrix.java }}
         cache: 'maven'
     - name: Build
-      run: mvn --no-transfer-progress -B clean package --file pom.xml
+      run: mvn --no-transfer-progress -B clean package
