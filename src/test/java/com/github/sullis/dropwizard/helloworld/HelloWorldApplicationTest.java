@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 @ExtendWith(DropwizardExtensionsSupport.class)
 public class HelloWorldApplicationTest {
 
-  private static final DropwizardAppExtension<HelloWorldConfiguration> EXT = new DropwizardAppExtension<>(
+  private static final DropwizardAppExtension<HelloWorldConfiguration> APP = new DropwizardAppExtension<>(
           HelloWorldApplication.class,
           ResourceHelpers.resourceFilePath("test_config.yml")
   );
@@ -23,7 +23,7 @@ public class HelloWorldApplicationTest {
   public void happyPath() throws Exception {
     given()
       .request()
-      .get("http://localhost:" + EXT.getLocalPort() + "/hello?name=Obama")
+      .get("http://localhost:" + APP.getLocalPort() + "/hello?name=Obama")
     .then()
         .assertThat()
         .statusCode(200)
