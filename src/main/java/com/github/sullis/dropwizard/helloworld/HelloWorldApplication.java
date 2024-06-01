@@ -2,8 +2,8 @@ package com.github.sullis.dropwizard.helloworld;
 
 import com.github.sullis.dropwizard.helloworld.resources.HelloResource;
 
-import io.dropwizard.Application;
-import io.dropwizard.setup.Environment;
+import io.dropwizard.core.Application;
+import io.dropwizard.core.setup.Environment;
 
 public class HelloWorldApplication
     extends Application<HelloWorldConfiguration> {

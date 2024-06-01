@@ -1,8 +1,8 @@
 package com.github.sullis.dropwizard.helloworld;
 
-import io.dropwizard.Configuration;
+import io.dropwizard.core.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 
 public class HelloWorldConfiguration extends Configuration {
     @NotEmpty
