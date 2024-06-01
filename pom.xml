@@ -9,7 +9,6 @@
 
     <properties>
       <junit.version>5.10.2</junit.version>
-      <slf4j.version>1.7.36</slf4j.version>
       <skip.tests>false</skip.tests>
       <main.class>com.github.sullis.dropwizard.helloworld.HelloWorldApplication</main.class>
     </properties>
