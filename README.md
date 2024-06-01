@@ -1,11 +1,11 @@
 # dropwizard-helloworld
 
 
-"Hello world" application -- [Dropwizard](https://dropwizard.io) version 2.x
+"Hello world" application -- [Dropwizard](https://dropwizard.io) version 4.x
 
 
 # Java runtime
-This project requires `Java 8` or higher
+This project requires `Java 7` or higher
 
 
 # Build
