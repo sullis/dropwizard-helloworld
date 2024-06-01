@@ -5,7 +5,7 @@
 
 
 # Java runtime
-This project requires `Java 7` or higher
+This project requires `Java 17` or higher
 
 
 # Build
